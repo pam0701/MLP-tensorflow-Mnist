@@ -3,8 +3,9 @@ import ImgComponent from "./components/ImgComponent";
 import BtnToNaver from "./components/BtnToNaver";
 import ClassState from "./components/ClassState";
 import FuntionalState from "./components/FunctionalState";
+import StatePractice from "./components/StatePractice";
 
-function App() {
+/* function App() {
   return (
     <div className="App">
       <TopHeader />
@@ -12,6 +13,14 @@ function App() {
       <BtnToNaver />
       <ClassState />
       <FuntionalState />
+    </div>
+  );
+} */
+
+function App() {
+  return (
+    <div className="App">
+      <StatePractice />
     </div>
   );
 }

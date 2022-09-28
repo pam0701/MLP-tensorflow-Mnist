@@ -1,21 +1,19 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
-export default function StatePractice() {
+function StatePractice() {
   const [message, setMessage] = useState("");
-
-  const onclickEnter = () => {
-    setMessage("안녕하세요!");
+  const onClickEnter = () => {
+    setMessage("안녕하세요~");
   };
-
-  const onclickLeave = () => {
-    setMessage("안녕히 가세요!");
+  const onClickLeave = () => {
+    setMessage("안녕히가세요");
   };
-
   return (
     <div>
+      <button onClick={onClickEnter}>입장</button>
+      <button onClick={onClickLeave}>퇴장</button>
       <h1>{message}</h1>
-      <button onclick={onclickEnter}>입장</button>
-      <button onclick={onclickLeave}>퇴장</button>
     </div>
   );
 }
+export default StatePractice;
